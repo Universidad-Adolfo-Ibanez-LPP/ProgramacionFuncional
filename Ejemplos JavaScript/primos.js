@@ -30,4 +30,3 @@ console.log(_.map([7, 9, 11, 15], function(a) { return esPrimo(a) }))
 
 console.log(_.size([7, 9, 11, 15]))
 
-console.log(_.reduce(_.map([7, 9, 11, 15], function(a) { return 1 }), function(memo, num){ return  memo+1; }))
