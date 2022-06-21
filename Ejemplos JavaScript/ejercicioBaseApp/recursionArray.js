@@ -24,7 +24,6 @@ function findPaths( mat, path,  i, j) {
         path.pop();
         return;
     }
-
     // meto la pos actual como parte del camino
     path.push(mat[i][j]);
 
@@ -32,7 +31,6 @@ function findPaths( mat, path,  i, j) {
     if ((i >= 0 && i < M && j + 1 >= 0 && j + 1 < N)) {
         findPaths(mat, path, i, j + 1);
     }
-
     // muevo un lugar abajo
     if ((i + 1 >= 0 && i + 1 < M && j >= 0 && j < N)) {
         findPaths(mat, path, i + 1, j);
